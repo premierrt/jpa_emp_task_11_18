@@ -2,3 +2,8 @@
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
 
+
+
+https://spring.io/guides/gs/accessing-data-jpa/
+http://www.springboottutorial.com/introduction-to-jpa-with-spring-boot-data-jpa
+https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/

@@ -6,34 +6,27 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+
+
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
 @ToString
 @Entity
-public class Employee {
+public class Task {
 
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-	private Long id;
-	private String firstName;
-	private String lastName;
+	private Long Id;
+	private String name;
 	
-	@ManyToMany
-	@JoinTable(
-			name = "emp_task",
-			joinColumns = {@JoinColumn(name="employee_id")},
-			inverseJoinColumns= {@JoinColumn(name="task_id")}
-			)
-	private Collection<Task> tasks;
-	
+	@ManyToMany(mappedBy="tasks")
+	private Collection<Employee> employees;
 }

@@ -27,6 +27,10 @@ public class Task {
 	private Long Id;
 	private String name;
 	
+	public  Task(String name) {
+		this.name= name;
+	}
+	
 	@ManyToMany(mappedBy="tasks")
 	private Collection<Employee> employees;
 }

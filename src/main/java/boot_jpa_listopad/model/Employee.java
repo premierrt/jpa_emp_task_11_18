@@ -27,6 +27,12 @@ public class Employee {
 	private Long id;
 	private String firstName;
 	private String lastName;
+
+	public  Employee(String fN, String lN) {
+		// TODO Auto-generated constructor stub
+		firstName=fN;
+		lastName=lN;
+	}
 	
 	@ManyToMany
 	@JoinTable(

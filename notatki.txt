@@ -1,0 +1,4 @@
+
+Model:
+Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
+

@@ -24,7 +24,7 @@ TO_DO:
 -- api 
 -- swagger
 -- testy 
-
+-- collection, list, arraylist
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --jprofiler
 https://www.baeldung.com/java-profilers

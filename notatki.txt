@@ -23,3 +23,8 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 TO_DO:
 -- api 
 -- swagger
+
+
+--debug z eclipse i podlaczenia sie do zdalnej aplikacji
+--jprofiler
+https://www.baeldung.com/java-profilers

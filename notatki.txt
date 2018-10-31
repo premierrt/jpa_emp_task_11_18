@@ -23,8 +23,13 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 TO_DO:
 -- api 
 -- swagger
-
+-- testy 
 
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --jprofiler
 https://www.baeldung.com/java-profilers
+
+
+
+----json blad
+http://springquay.blogspot.com/2016/01/new-approach-to-solve-json-recursive.html

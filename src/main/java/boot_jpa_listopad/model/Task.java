@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -37,5 +39,6 @@ public class Task {
                     CascadeType.PERSIST,
                     CascadeType.MERGE
                 },mappedBy="tasks")
+	 @JsonIgnoreProperties ("tasks")
 	private Collection<Employee> employees = new ArrayList<Employee>();
 }

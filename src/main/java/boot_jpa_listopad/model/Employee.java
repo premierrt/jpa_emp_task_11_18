@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -37,6 +39,7 @@ public class Employee {
 		lastName=lN;
 	}
 	
+	
 	@ManyToMany(fetch = FetchType.LAZY,
             cascade = {
                     CascadeType.PERSIST,
@@ -47,6 +50,7 @@ public class Employee {
 			joinColumns = {@JoinColumn(name="employee_id")},
 			inverseJoinColumns= {@JoinColumn(name="task_id")}
 			)
+	 @JsonIgnoreProperties ("employees")
 	private Collection<Task> tasks = new ArrayList<Task>();
 	
 }

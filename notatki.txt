@@ -18,3 +18,8 @@ https://projectlombok.org/setup/eclipse
 	
 --lazy loading
 https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-boot-mysql
+
+
+TO_DO:
+-- api 
+-- swagger

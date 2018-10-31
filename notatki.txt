@@ -21,12 +21,14 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 
 
 TO_DO:
+--lokalny merge
 -- api 
 -- swagger
 -- testy 
 -- collection, list, arraylist
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --jprofiler
+
 https://www.baeldung.com/java-profilers
 
 

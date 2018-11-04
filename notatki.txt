@@ -21,10 +21,14 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 
 
 TO_DO:
+-- rest z jpa : https://spring.io/guides/tutorials/rest/
 --lokalny merge
 -- api 
 -- swagger
+--spring securiy
+-- logowanie - logback i slauth
 -- testy 
+-- HATEOAS
 -- collection, list, arraylist
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --jprofiler

@@ -28,6 +28,8 @@ public class EmployeeControler {
 		return  empService.getEmployees();
 	}
 	
+	
+	// !!!!! dopisać wywołania curla do tworzenia 
 	@PostMapping("/emps")
 	//The @RequestBody method parameter annotation should bind the json value in the HTTP request body to the java object by using a HttpMessageConverter.
 	public Employee newEmployee(@RequestBody Employee newEmployee){

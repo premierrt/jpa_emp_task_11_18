@@ -7,3 +7,35 @@ Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
 https://spring.io/guides/gs/accessing-data-jpa/
 http://www.springboottutorial.com/introduction-to-jpa-with-spring-boot-data-jpa
 https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
+
+--lombok
+https://projectlombok.org/setup/eclipse
+
+
+	private Collection<Employee> employees = new ArrayList<Employee>();
+
+	
+	
+--lazy loading
+https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-boot-mysql
+
+
+TO_DO:
+-- rest z jpa : https://spring.io/guides/tutorials/rest/
+--lokalny merge
+-- api 
+-- swagger  --> https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+--spring securiy
+-- logowanie - logback i slauth
+-- testy 
+-- HATEOAS
+-- collection, list, arraylist
+--debug z eclipse i podlaczenia sie do zdalnej aplikacji
+--jprofiler
+
+https://www.baeldung.com/java-profilers
+
+
+
+----json blad
+http://springquay.blogspot.com/2016/01/new-approach-to-solve-json-recursive.html

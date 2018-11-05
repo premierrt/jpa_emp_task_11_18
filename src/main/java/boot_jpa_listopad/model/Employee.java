@@ -1,14 +1,19 @@
 package boot_jpa_listopad.model;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,12 +39,18 @@ public class Employee {
 		lastName=lN;
 	}
 	
-	@ManyToMany
+	
+	@ManyToMany(fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+                })
 	@JoinTable(
 			name = "emp_task",
 			joinColumns = {@JoinColumn(name="employee_id")},
 			inverseJoinColumns= {@JoinColumn(name="task_id")}
 			)
-	private Collection<Task> tasks;
+	 @JsonIgnoreProperties ("employees")
+	private Collection<Task> tasks = new ArrayList<Task>();
 	
 }

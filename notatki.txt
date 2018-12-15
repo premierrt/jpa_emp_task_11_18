@@ -21,6 +21,7 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 
 
 TO_DO:
+1. zrebazowac master i sobota
 -- rest z jpa : https://spring.io/guides/tutorials/rest/
 --lokalny merge
 -- api 

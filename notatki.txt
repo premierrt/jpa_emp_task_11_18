@@ -25,6 +25,7 @@ TO_DO:
 --lokalny merge
 -- api 
 [v]- swagger  --> https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+http://localhost:8080/swagger-ui.html
 --spring securiy
 -- logowanie - logback i slauth
 -- testy 
@@ -33,6 +34,8 @@ TO_DO:
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --ci/cd ??? github -> do lokalnego jenkinsa na dockerze
 --jprofiler
+--zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
+-junit /mockito
 
 https://www.baeldung.com/java-profilers
 

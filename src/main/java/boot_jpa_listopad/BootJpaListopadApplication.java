@@ -1,5 +1,8 @@
 package boot_jpa_listopad;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +42,16 @@ public class BootJpaListopadApplication implements CommandLineRunner{
 		emp1.getTasks().add(task1);
 		
 		employeeRepository.save(emp1);
+		
+		
+		//na tym testowac kolekcje - albo przeniesc to do testow
+		List<Task> tasks = new ArrayList<Task>();
+		tasks.add(new Task("drzemka"));
+		tasks.add(new Task("oranie pola"));
+		tasks.add(new Task("wykopki"));
+		
+		//https://www.mkyong.com/java8/java-8-streams-filter-examples/
+		tasks.stream().findFirst();
 		
 		log.info(employeeRepository.findAll().toString());
 	

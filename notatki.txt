@@ -36,6 +36,7 @@ http://localhost:8080/swagger-ui.html
 --jprofiler
 --zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
 -junit /mockito
+-git rebase http://www.pzielinski.com/?p=2652
 
 https://www.baeldung.com/java-profilers
 

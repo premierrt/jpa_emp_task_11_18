@@ -36,11 +36,8 @@ public class BootJpaListopadApplication implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		
 		Employee emp1  = new Employee("Marian", "Padzioch");
-		
 		Task task1 = new Task("zmywanie garow");
-		
 		emp1.getTasks().add(task1);
-		
 		employeeRepository.save(emp1);
 		
 		//emp2
@@ -49,6 +46,10 @@ public class BootJpaListopadApplication implements CommandLineRunner{
 		
 		
 		
+		
+		//emp 2
+		emp2 = new Employee("Boczek","Boczek");
+		employeeRepository.save(emp2);
 		
 		//na tym testowac kolekcje - albo przeniesc to do testow
 		List<Task> tasks = new ArrayList<Task>();

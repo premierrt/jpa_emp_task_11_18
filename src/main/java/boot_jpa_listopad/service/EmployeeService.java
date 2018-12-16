@@ -10,9 +10,12 @@ public interface EmployeeService {
 	
 	public Employee save(Employee newEmployee);
 	
+<<<<<<< HEAD
 	public Employee addTaskToEmp(Employee emp, Task task);
 	
 	public Employee addTaskToEmp(Long emp_id, Long task_id);
 
 
+=======
+>>>>>>> refs/remotes/origin/master
 }

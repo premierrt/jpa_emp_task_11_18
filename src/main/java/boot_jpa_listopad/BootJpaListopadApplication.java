@@ -51,9 +51,11 @@ public class BootJpaListopadApplication implements CommandLineRunner{
 		tasks.add(new Task("wykopki"));
 		
 		//https://www.mkyong.com/java8/java-8-streams-filter-examples/
-		tasks.stream().findFirst();
+		//java 8 str.253
+		tasks.forEach(el -> taskRepository.save(el) );
 		
 		log.info(employeeRepository.findAll().toString());
+		log.info(taskRepository.findAll().toString());
 	
 	}
 	

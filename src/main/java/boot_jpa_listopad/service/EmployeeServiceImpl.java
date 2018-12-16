@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import boot_jpa_listopad.model.Employee;
 import boot_jpa_listopad.model.Task;
 import boot_jpa_listopad.repository.EmployeeRepository;
+import boot_jpa_listopad.repository.TaskRepository;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -16,6 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 public class EmployeeServiceImpl implements EmployeeService{
 
 	private EmployeeRepository empRepo;
+	
 	
 	@Autowired
 	public  EmployeeServiceImpl(EmployeeRepository empRep) {
@@ -41,8 +43,14 @@ public class EmployeeServiceImpl implements EmployeeService{
 	 */
 	public Employee addTaskToEmp(Employee emp, Task task) {
 		
+		//https://stackoverflow.com/questions/49316751/spring-data-jpa-findone-change-to-optional-how-to-use-this
+		Employee dbEmp= empRepo.findById(emp.getId()).orElse(null);
+		log.info("update emp id: " +emp.getId());
 		
-		return null;
+		dbEmp.getTasks().add(task);
+		empRepo.save(dbEmp);
+		
+		return dbEmp;
 	}
 
 

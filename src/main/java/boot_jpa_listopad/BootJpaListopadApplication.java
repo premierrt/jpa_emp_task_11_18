@@ -48,7 +48,7 @@ public class BootJpaListopadApplication implements CommandLineRunner{
 		
 		
 		//emp 2
-		Employee emp2 = new Employee("Boczek","Boczek");
+		emp2 = new Employee("Boczek","Boczek");
 		employeeRepository.save(emp2);
 		
 		//na tym testowac kolekcje - albo przeniesc to do testow

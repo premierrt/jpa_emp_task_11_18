@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import boot_jpa_listopad.model.Employee;
+import boot_jpa_listopad.model.Task;
 import boot_jpa_listopad.repository.EmployeeRepository;
 import lombok.extern.slf4j.Slf4j;
 
@@ -33,6 +34,18 @@ public class EmployeeServiceImpl implements EmployeeService{
 		empRepo.save(newEmployee);
 		return newEmployee;
 	}
+
+	@Override
+	/**
+	 * dodaje wybranego taska do emp - dodac test do tego
+	 */
+	public Employee addTaskToEmp(Employee emp, Task task) {
+		
+		
+		return null;
+	}
+
+
 
 	
 	

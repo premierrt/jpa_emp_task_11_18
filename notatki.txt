@@ -21,7 +21,10 @@ https://grokonez.com/hibernate/use-hibernate-lazy-fetch-eager-fetch-type-spring-
 
 
 TO_DO:
-1. zrebazowac master i sobota
+--jak sie robi update entity w spring data jpa? dodać test do tego.
+https://stackoverflow.com/questions/11881479/how-do-i-update-an-entity-using-spring-data-jpa
+
+1.[v] zrebazowac master i sobota
 -- rest z jpa : https://spring.io/guides/tutorials/rest/
 --lokalny merge
 -- api 

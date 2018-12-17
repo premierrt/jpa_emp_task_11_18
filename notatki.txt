@@ -46,9 +46,10 @@ https://stackoverflow.com/questions/49316751/spring-data-jpa-findone-change-to-o
 
 
 --test serwisu uzywającego repo
+https://springframework.guru/mockito-mock-vs-spy-in-spring-boot-tests/
 https://stackabuse.com/how-to-test-a-spring-boot-application/
 https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/tutorial-part-seven/src/test/java/net/petrikainulainen/spring/datajpa/service/RepositoryPersonServiceTest.java
-
+http://www.vogella.com/tutorials/Hamcrest/article.html
 
 1.[v] zrebazowac master i sobota
 -- rest z jpa : https://spring.io/guides/tutorials/rest/

@@ -28,6 +28,11 @@ https://stackoverflow.com/questions/11881479/how-do-i-update-an-entity-using-spr
 https://www.baeldung.com/hibernate-inheritance
 
 
+
+-jpa custom queryr
+http://blog.mloza.pl/spring-boot-interakcja-z-baza-danych-czyli-spring-data-jpa/
+
+
 --http put vs patch
 https://www.baeldung.com/http-put-patch-difference-spring
 

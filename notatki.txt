@@ -24,6 +24,10 @@ TO_DO:
 --jak sie robi update entity w spring data jpa? dodać test do tego.
 https://stackoverflow.com/questions/11881479/how-do-i-update-an-entity-using-spring-data-jpa
 
+--jpa dziedziczenie - inherirance
+https://www.baeldung.com/hibernate-inheritance
+
+
 --http put vs patch
 https://www.baeldung.com/http-put-patch-difference-spring
 
@@ -58,6 +62,8 @@ http://localhost:8080/swagger-ui.html
 --zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
 -junit /mockito
 -git rebase http://www.pzielinski.com/?p=2652
+--rozdzielic na 2 moduly
+
 
 https://www.baeldung.com/java-profilers
 

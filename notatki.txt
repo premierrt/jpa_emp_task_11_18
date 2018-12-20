@@ -66,7 +66,7 @@ http://localhost:8080/swagger-ui.html
 --ci/cd ??? github -> do lokalnego jenkinsa na dockerze
 --jprofiler
 --zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
--junit /mockito
+-junit /mockito /hamcrest
 -git rebase http://www.pzielinski.com/?p=2652
 --rozdzielic na 2 moduly
 

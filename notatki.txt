@@ -45,7 +45,7 @@ https://www.restapitutorial.com/lessons/httpmethods.html
 https://stackoverflow.com/questions/49316751/spring-data-jpa-findone-change-to-optional-how-to-use-this
 
 
---test serwisu uzywającego repo
+[v]-test serwisu uzywającego repo
 https://springframework.guru/mockito-mock-vs-spy-in-spring-boot-tests/
 https://stackabuse.com/how-to-test-a-spring-boot-application/
 https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/tutorial-part-seven/src/test/java/net/petrikainulainen/spring/datajpa/service/RepositoryPersonServiceTest.java
@@ -59,14 +59,14 @@ http://www.vogella.com/tutorials/Hamcrest/article.html
 http://localhost:8080/swagger-ui.html
 --spring securiy
 -- logowanie - logback i slauth
--- testy 
+[v] testy 
 -- HATEOAS
--- collection, list, arraylist
+[v] collection, list, arraylist
 --debug z eclipse i podlaczenia sie do zdalnej aplikacji
 --ci/cd ??? github -> do lokalnego jenkinsa na dockerze
 --jprofiler
 --zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
--junit /mockito /hamcrest
+[v --] junit /mockito /hamcrest
 -git rebase http://www.pzielinski.com/?p=2652
 --rozdzielic na 2 moduly
 

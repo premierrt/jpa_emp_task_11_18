@@ -3,6 +3,9 @@ Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
 
 
+!!!!git - merge rebase squash
+https://developer.atlassian.com/blog/2014/12/pull-request-merge-strategies-the-great-debate/ 
+
 
 https://spring.io/guides/gs/accessing-data-jpa/
 http://www.springboottutorial.com/introduction-to-jpa-with-spring-boot-data-jpa

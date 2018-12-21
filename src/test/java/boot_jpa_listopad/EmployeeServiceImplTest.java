@@ -48,8 +48,19 @@ public class EmployeeServiceImplTest {
 	@InjectMocks
 	private EmployeeServiceImpl empService;
 
+	private Employee empTest;
+
+	private Task taskTest;
+	
+	private static final String empName = "Marian";
+	private static final String empSurname = "Paździoch";
+	private static final String taskName = "spanie";
+
 	@Before
 	public void setUp() throws Exception {
+		empTest = new Employee(empName, empSurname);
+		taskTest = new Task(taskName);
+	
 	}
 
 	@Test
@@ -68,6 +79,23 @@ public class EmployeeServiceImplTest {
 		assertThat(updatedEmp, is(emp));
 	}
 	
-	//dodac test z  wypelnionym danym uzytkonwikiem i taskiem
+	@Test
+	public void testAddTaskToEmpNaDanych(){
+		log.info(" test na mockito emp: " +empTest.toString());
+		log.info(" test na mockito task: " +taskTest.toString());
+		
+		//optinal.get
+				when(empRepo.findById(1L)).thenReturn(Optional.of(empTest));
+				//?? optionale???
+				when(taskRepo.findById(1L)).thenReturn(Optional.of(taskTest));
+				
+				Employee updatedEmp= empService.addTaskToEmp(1L, 1L);
+				//http://www.vogella.com/tutorials/Hamcrest/article.html
+				assertThat(updatedEmp.getTasks().stream().findFirst().get().getName(), is(taskName));
+			}
+		
+		
+		
+	
 
 }

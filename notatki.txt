@@ -1,3 +1,8 @@
+To_do:
+-rest client dla 
+https://jsonplaceholder.typicode.com/users
+--dodac tez mocki z wiremockiem
+
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )

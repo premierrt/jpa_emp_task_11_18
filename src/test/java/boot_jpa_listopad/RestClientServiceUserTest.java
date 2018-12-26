@@ -2,13 +2,11 @@ package boot_jpa_listopad;
 
 import static org.junit.Assert.assertNotNull;
 
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import boot_jpa_listopad.JsonPlaceHolderRestClient.JsonPlaceHolderUserService;
+import boot_jpa_listopad.JsonPlaceHolderRestClient.JsonPlaceHolderUserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -21,22 +19,26 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * dopisac test, ktory bedzie korzystal z propertisow, ktore beda mialy mocka -test.props
  * https://www.logicbig.com/tutorials/spring-framework/spring-core/test-property-source-annotation.html
+ * 
+ * 
+ * ostaecznie zmianione na pole w klasie wstrzyiwane value przez konstruktor
+ * https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test
  * @author rafal
  *
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 @Slf4j
 public class RestClientServiceUserTest {
 
-	@Autowired
+	//@Autowired
 	private JsonPlaceHolderUserService jsonPlaceHolderUserService;
 	
 	
-//	@Before
-//	public void setUp() {
-//		service = new JsonPlaceHolderUserServiceImpl();
-//	}
+	@Before
+	public void setUp() {
+		jsonPlaceHolderUserService = new JsonPlaceHolderUserServiceImpl("https://jsonplaceholder.typicode.com/users");
+	}
 	
 	@Test
 	public void testGetJsonPlaceHolderUser() {

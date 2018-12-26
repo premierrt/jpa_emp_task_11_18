@@ -12,8 +12,16 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class JsonPlaceHolderUserServiceImpl implements JsonPlaceHolderUserService{
 
-	@Value("${restserver.url}")
+	
 	private String url;
+	
+	//
+	//ostaecznie zmianione na pole w klasie wstrzyiwane value przez konstruktor
+	// https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test
+	//
+	public JsonPlaceHolderUserServiceImpl(@Value("${restserver.url}") String url) {
+		this.url=url;
+	}
 	
 	@Override
 	public List<JsonPlaceHolderUser> getJsonPlaceHolderUser() {

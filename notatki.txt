@@ -14,6 +14,8 @@ http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate
 
 -dopisac test, ktory bedzie korzystal z propertisow, ktore beda mialy mocka -test.props
  * https://www.logicbig.com/tutorials/spring-framework/spring-core/test-property-source-annotation.html
+ --ew. dodac klase wenwnetrzna ktora ma propersitsa i ja mockować w testach...
+ 
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )

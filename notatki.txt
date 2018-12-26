@@ -5,10 +5,11 @@ https://spring.io/guides/gs/consuming-rest/
 --dodac tez mocki z wiremockiem
 --tool do mapowania json - java i generowania klass , ew oniline --> http://www.jsonschema2pojo.org/
 --ew. spring integration lub cos innego 
---mapowanie -> http://mapstruct.org/
+--zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 
 -async https://spring.io/guides/gs/async-method/
 --cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
-
+--dodac wywolanie resttemplate dla POST, wtedy trzeba zrobic objekt jsona, bo parametry w post w body idą...
+http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
 
 
 Model:

@@ -12,6 +12,8 @@ https://spring.io/guides/gs/consuming-rest/
 --dodac wywolanie resttemplate dla POST, wtedy trzeba zrobic objekt jsona, bo parametry w post w body idą...
 http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
 
+-dopisac test, ktory bedzie korzystal z propertisow, ktore beda mialy mocka -test.props
+ * https://www.logicbig.com/tutorials/spring-framework/spring-core/test-property-source-annotation.html
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )

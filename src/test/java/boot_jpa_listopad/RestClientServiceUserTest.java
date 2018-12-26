@@ -31,7 +31,7 @@ public class RestClientServiceUserTest {
 	@Test
 	public void testGetJsonPlaceHolderUser() {
 		
-		
+	//zmienic na assercje z hamcresta	
 		log.info("======================== "+service.getJsonPlaceHolderUser().toString());
 		assertNotNull(service.getJsonPlaceHolderUser());
 	}

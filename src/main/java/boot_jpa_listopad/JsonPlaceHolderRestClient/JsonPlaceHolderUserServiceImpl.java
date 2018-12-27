@@ -4,12 +4,16 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class JsonPlaceHolderUserServiceImpl implements JsonPlaceHolderUserService{
 
 	
@@ -36,6 +40,16 @@ public class JsonPlaceHolderUserServiceImpl implements JsonPlaceHolderUserServic
 	List<JsonPlaceHolderUser> list = response.getBody()	;
 	return list;
   
+	}
+
+	@Override
+	public JsonPlaceHolderPostDTO setPost(JsonPlaceHolderPostDTO jsonPlaceHolderPostDTO) {
+		RestTemplate rt = new RestTemplate();
+		//??? co to za klasa httpentinty/
+		HttpEntity<JsonPlaceHolderPostDTO> postObject = new HttpEntity<JsonPlaceHolderPostDTO>(jsonPlaceHolderPostDTO);
+		JsonPlaceHolderPostDTO returnPostDTO = rt.postForObject(url, postObject, JsonPlaceHolderPostDTO.class);
+		log.info("------------------------- "+ returnPostDTO.toString());
+		return returnPostDTO;
 	}
 
 }

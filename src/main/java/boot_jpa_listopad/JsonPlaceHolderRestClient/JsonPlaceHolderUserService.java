@@ -5,4 +5,5 @@ import java.util.List;
 public interface JsonPlaceHolderUserService {
 
 	List<JsonPlaceHolderUser> getJsonPlaceHolderUser();
+	JsonPlaceHolderPostDTO setPost(JsonPlaceHolderPostDTO jsonPlaceHolderPostDTO);
 }

@@ -1,11 +1,14 @@
 To_do:
+--dodac FindBug i sonar
+
 ----rest client dla 
 https://jsonplaceholder.typicode.com/users
 https://spring.io/guides/gs/consuming-rest/  
 [v] get
 
---post
+[v] - post
 --dodac wywolanie resttemplate dla POST, wtedy trzeba zrobic objekt jsona, bo parametry w post w body idą...
+https://www.baeldung.com/rest-template
 http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
 https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-json/27106518
 
@@ -22,6 +25,9 @@ https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-jso
 -dopisac test, ktory bedzie korzystal z propertisow, ktore beda mialy mocka -test.props
  * https://www.logicbig.com/tutorials/spring-framework/spring-core/test-property-source-annotation.html
 
+--debug
+--import * i import static
+
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
@@ -35,7 +41,7 @@ https://spring.io/guides/gs/accessing-data-jpa/
 http://www.springboottutorial.com/introduction-to-jpa-with-spring-boot-data-jpa
 https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
 
---lombok
+[v] lombok
 https://projectlombok.org/setup/eclipse
 
 
@@ -77,6 +83,7 @@ https://springframework.guru/mockito-mock-vs-spy-in-spring-boot-tests/
 https://stackabuse.com/how-to-test-a-spring-boot-application/
 https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/tutorial-part-seven/src/test/java/net/petrikainulainen/spring/datajpa/service/RepositoryPersonServiceTest.java
 http://www.vogella.com/tutorials/Hamcrest/article.html
+
 
 1.[v] zrebazowac master i sobota
 -- rest z jpa : https://spring.io/guides/tutorials/rest/

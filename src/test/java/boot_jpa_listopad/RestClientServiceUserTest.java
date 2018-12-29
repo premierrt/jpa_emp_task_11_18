@@ -1,6 +1,7 @@
 package boot_jpa_listopad;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNotNull;
 
@@ -58,9 +59,10 @@ public class RestClientServiceUserTest {
 	@Test
 	public void testGetJsonPlaceHolderUser() {
 		
-	//zmienic na assercje z hamcresta	
 		log.info("======================== "+jsonPlaceHolderUserService.getJsonPlaceHolderUser().toString());
 		assertNotNull(jsonPlaceHolderUserService.getJsonPlaceHolderUser());
+		//hamcrest
+		assertThat(jsonPlaceHolderUserService.getJsonPlaceHolderUser(), is(notNullValue() ));
 	}
 	
 	//czy to powinien byc osobna test case?

@@ -18,7 +18,7 @@ https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-jso
 --zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 
 -async https://spring.io/guides/gs/async-method/
 --cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
-
+--Docker z rabbitmq
 
  [v] dodalem wstrzykiwanie valu przez konstruktor w klasie pod testami.
  https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test

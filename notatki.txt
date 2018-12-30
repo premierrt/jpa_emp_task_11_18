@@ -1,3 +1,5 @@
+git rebase vs merge 
+
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )

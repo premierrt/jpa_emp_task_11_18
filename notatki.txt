@@ -11,6 +11,36 @@ https://spring.io/guides/gs/consuming-rest/
 --cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
 
 
+To_do:
+--dodac FindBug i sonar
+
+----rest client dla 
+https://jsonplaceholder.typicode.com/users
+https://spring.io/guides/gs/consuming-rest/  
+[v] get
+
+[v] - post
+--dodac wywolanie resttemplate dla POST, wtedy trzeba zrobic objekt jsona, bo parametry w post w body idą...
+https://www.baeldung.com/rest-template
+http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
+https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-json/27106518
+
+--dodac tez mocki z wiremockiem
+--tool do mapowania json - java i generowania klass , ew oniline --> http://www.jsonschema2pojo.org/
+--ew. spring integration lub cos innego 
+--zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 
+-async https://spring.io/guides/gs/async-method/
+--cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
+--Docker z rabbitmq
+
+ [v] dodalem wstrzykiwanie valu przez konstruktor w klasie pod testami.
+ https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test
+-dopisac test, ktory bedzie korzystal z propertisow, ktore beda mialy mocka -test.props
+ * https://www.logicbig.com/tutorials/spring-framework/spring-core/test-property-source-annotation.html
+
+--debug
+--import * i import static
+
 
 Model:
 Empoyee >---< Task  ( w bazie emp >---emp_task ---< task )
@@ -24,7 +54,7 @@ https://spring.io/guides/gs/accessing-data-jpa/
 http://www.springboottutorial.com/introduction-to-jpa-with-spring-boot-data-jpa
 https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
 
---lombok
+[v] lombok
 https://projectlombok.org/setup/eclipse
 
 
@@ -66,6 +96,7 @@ https://springframework.guru/mockito-mock-vs-spy-in-spring-boot-tests/
 https://stackabuse.com/how-to-test-a-spring-boot-application/
 https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/tutorial-part-seven/src/test/java/net/petrikainulainen/spring/datajpa/service/RepositoryPersonServiceTest.java
 http://www.vogella.com/tutorials/Hamcrest/article.html
+
 
 1.[v] zrebazowac master i sobota
 -- rest z jpa : https://spring.io/guides/tutorials/rest/

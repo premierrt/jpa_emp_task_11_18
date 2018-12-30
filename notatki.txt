@@ -1,17 +1,5 @@
 git rebase vs merge 
 To_do:
-----rest client dla 
-https://jsonplaceholder.typicode.com/users
-https://spring.io/guides/gs/consuming-rest/  
---dodac tez mocki z wiremockiem
---tool do mapowania json - java i generowania klass , ew oniline --> http://www.jsonschema2pojo.org/
---ew. spring integration lub cos innego 
---mapowanie -> http://mapstruct.org/
--async https://spring.io/guides/gs/async-method/
---cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
-
-
-To_do:
 --dodac FindBug i sonar
 
 ----rest client dla 
@@ -32,6 +20,7 @@ https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-jso
 -async https://spring.io/guides/gs/async-method/
 --cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
 --Docker z rabbitmq
+
 
  [v] dodalem wstrzykiwanie valu przez konstruktor w klasie pod testami.
  https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test

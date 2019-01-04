@@ -1,5 +1,10 @@
+run
+mvn package && java -jar -Dspring.profiles.active=dev target/boot_grafboot_jpa_listopadana-0.0.1-SNAPSHOT.jar
+
+
 git rebase vs merge 
 To_do:
+--napisac mock uslugi zewnetrznej dla srodowiska dev - zobaczyc jak to robią. czy fremework jakis?
 --dodac FindBug i sonar
 
 ----rest client dla 
@@ -103,8 +108,11 @@ http://localhost:8080/swagger-ui.html
 --jprofiler
 --zrobic dockera tak jak w https://github.com/premierrt/microservice_eureka_server/blob/master/pom.xml 
 [v --] junit /mockito /hamcrest
--git rebase http://www.pzielinski.com/?p=2652
+[v] -git rebase http://www.pzielinski.com/?p=2652
 --rozdzielic na 2 moduly
+
+--logback i profile spring https://reflectoring.io/profile-specific-logging-spring-boot/
+
 
 
 https://www.baeldung.com/java-profilers

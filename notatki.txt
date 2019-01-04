@@ -4,7 +4,10 @@ mvn package && java -jar -Dspring.profiles.active=dev target/boot_grafboot_jpa_l
 
 git rebase vs merge 
 To_do:
---napisac mock uslugi zewnetrznej dla srodowiska dev - zobaczyc jak to robią. czy fremework jakis?
+[v--]napisac mock uslugi zewnetrznej dla srodowiska dev - zobaczyc jak to robią. czy fremework jakis?
+http://geokoder.com/mock-services-using-spring-profile
+sprawdzic wiremocka
+
 --dodac FindBug i sonar
 
 ----rest client dla 
@@ -23,7 +26,7 @@ https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-jso
 --ew. spring integration lub cos innego 
 --zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 
 -async https://spring.io/guides/gs/async-method/
---cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
+--cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-even[t-sourcing-starter-part-1
 --Docker z rabbitmq
 
 

@@ -1,12 +1,17 @@
 run
+cd /home/rafal/sts-devel-projekty/boot_jpa_listopad
 mvn package && java -jar -Dspring.profiles.active=dev target/boot_grafboot_jpa_listopadana-0.0.1-SNAPSHOT.jar
 
+-------------------
 
 git rebase vs merge 
 To_do:
-[v--]napisac mock uslugi zewnetrznej dla srodowiska dev - zobaczyc jak to robią. czy fremework jakis?
+[v--]napisac mock uslugi zewnetrznej dla srodowiska dev. imlemenatacja interfejsu serwisu jako Mock.
 http://geokoder.com/mock-services-using-spring-profile
 sprawdzic wiremocka
+[v] - dodac konfiguracje Profile, ktora implementacje serwisu wybrac.
+https://www.mkyong.com/spring-boot/spring-boot-profiles-example/
+
 
 --dodac FindBug i sonar
 

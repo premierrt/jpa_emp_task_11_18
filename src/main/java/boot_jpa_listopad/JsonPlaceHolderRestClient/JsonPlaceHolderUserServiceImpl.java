@@ -3,6 +3,7 @@ package boot_jpa_listopad.JsonPlaceHolderRestClient;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -13,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
+@Profile({"prod","default"})
 @Slf4j
 public class JsonPlaceHolderUserServiceImpl implements JsonPlaceHolderUserService{
 

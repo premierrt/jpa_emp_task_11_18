@@ -11,7 +11,8 @@ http://geokoder.com/mock-services-using-spring-profile
 sprawdzic wiremocka
 [v] - dodac konfiguracje Profile, ktora implementacje serwisu wybrac.
 https://www.mkyong.com/spring-boot/spring-boot-profiles-example/
-
+-wiremock
+https://www.baeldung.com/introduction-to-wiremock
 
 --dodac FindBug i sonar
 
@@ -26,7 +27,6 @@ https://www.baeldung.com/rest-template
 http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
 https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-json/27106518
 
---dodac tez mocki z wiremockiem
 --tool do mapowania json - java i generowania klass , ew oniline --> http://www.jsonschema2pojo.org/
 --ew. spring integration lub cos innego 
 --zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 

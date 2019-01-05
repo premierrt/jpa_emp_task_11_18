@@ -1,10 +1,19 @@
 run
+cd /home/rafal/sts-devel-projekty/boot_jpa_listopad
 mvn package && java -jar -Dspring.profiles.active=dev target/boot_grafboot_jpa_listopadana-0.0.1-SNAPSHOT.jar
 
+-------------------
 
 git rebase vs merge 
 To_do:
---napisac mock uslugi zewnetrznej dla srodowiska dev - zobaczyc jak to robią. czy fremework jakis?
+[v--]napisac mock uslugi zewnetrznej dla srodowiska dev. imlemenatacja interfejsu serwisu jako Mock.
+http://geokoder.com/mock-services-using-spring-profile
+sprawdzic wiremocka
+[v] - dodac konfiguracje Profile, ktora implementacje serwisu wybrac.
+https://www.mkyong.com/spring-boot/spring-boot-profiles-example/
+-wiremock
+https://www.baeldung.com/introduction-to-wiremock
+
 --dodac FindBug i sonar
 
 ----rest client dla 
@@ -18,12 +27,11 @@ https://www.baeldung.com/rest-template
 http://bykowski.pl/spring-boot-integracja-z-rest-api-na-przykladzie-resttemplate/
 https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-json/27106518
 
---dodac tez mocki z wiremockiem
 --tool do mapowania json - java i generowania klass , ew oniline --> http://www.jsonschema2pojo.org/
 --ew. spring integration lub cos innego 
 --zapisywac pobrane dane do bazy z serwisu --> mapowanie -> http://mapstruct.org/ 
 -async https://spring.io/guides/gs/async-method/
---cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-event-sourcing-starter-part-1
+--cqrs, event sourcing https://dzone.com/articles/spring-boot-akka-even[t-sourcing-starter-part-1
 --Docker z rabbitmq
 
 

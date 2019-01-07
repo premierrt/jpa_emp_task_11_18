@@ -119,6 +119,9 @@ http://localhost:8080/swagger-ui.html
 [v] -git rebase http://www.pzielinski.com/?p=2652
 --rozdzielic na 2 moduly
 
+--zrobic frontend, albo dodatkową aplikacje i stworzyć docker compose
+https://www.linode.com/docs/applications/containers/how-to-use-docker-compose/
+
 --logback i profile spring https://reflectoring.io/profile-specific-logging-spring-boot/
 
 

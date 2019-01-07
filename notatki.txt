@@ -137,3 +137,7 @@ http://springquay.blogspot.com/2016/01/new-approach-to-solve-json-recursive.html
 
 ---
 http://localhost:8080/swagger-ui.html#
+
+-----
+GUI - rest client z obsluga cookies
+-------
